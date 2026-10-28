@@ -14,6 +14,10 @@ Arcade Vault: plataforma para jugar online y competir por la mayor cantidad de p
 
 Next 16.4.3 + React 19.3. Las APIs difieren de lo conocido previamente. Según `AGENTS.md`, leer la guía relevante en `node_modules/next/dist/docs/` (empezar por `index.md`) antes de escribir código de Next.js. Atender los avisos de deprecación.
 
+## Skills
+Usa siempre /frontend-design para hacer interfaz de usuario.
+
+
 ## Notas de arquitectura
 
 - Solo App Router (`app/`). El layout raíz usa el tipo global `LayoutProps<"/">` (sin import) y las fuentes Geist de `next/font/google` expuestas como variables CSS.
