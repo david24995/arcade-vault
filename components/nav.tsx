@@ -10,7 +10,8 @@ export function Nav() {
   const pathname = usePathname();
   const { user, signOut } = useSession();
 
-  const biblioteca = pathname === "/" || pathname.startsWith("/juegos");
+  const inicio = pathname === "/";
+  const biblioteca = pathname.startsWith("/juegos");
   const salon = pathname.startsWith("/salon");
   const auth = pathname.startsWith("/auth");
   const close = () => setOpen(false);
@@ -25,7 +26,10 @@ export function Nav() {
           </div>
         </Link>
         <div className="links">
-          <Link href="/" className={biblioteca ? "active" : ""}>
+          <Link href="/" className={inicio ? "active" : ""}>
+            Inicio
+          </Link>
+          <Link href="/juegos" className={biblioteca ? "active" : ""}>
             Biblioteca
           </Link>
           <Link href="/salon" className={salon ? "active" : ""}>
@@ -66,7 +70,14 @@ export function Nav() {
         >
           MENÚ
         </div>
-        <Link href="/" className={biblioteca ? "active" : ""} onClick={close}>
+        <Link href="/" className={inicio ? "active" : ""} onClick={close}>
+          Inicio
+        </Link>
+        <Link
+          href="/juegos"
+          className={biblioteca ? "active" : ""}
+          onClick={close}
+        >
           Biblioteca
         </Link>
         <Link href="/salon" className={salon ? "active" : ""} onClick={close}>
