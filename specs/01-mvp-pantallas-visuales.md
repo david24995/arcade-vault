@@ -102,29 +102,29 @@ Convenciones:
 
 ## Criterios de aceptación
 
-- [ ] `npm run lint` y `npm run build` terminan sin errores ni avisos de deprecación nuevos.
-- [ ] `/` muestra el hero "ARCADE VAULT", el campo de búsqueda, los 5 chips (`TODOS`, `ARCADE`, `PUZZLE`, `SHOOTER`, `VERSUS`) y 8 tarjetas.
-- [ ] Escribir "caí" en la búsqueda deja solo la tarjeta CAÍDA.
-- [ ] Buscar un texto sin coincidencias muestra "NO HAY RESULTADOS".
-- [ ] Clic en una tarjeta o en su botón JUGAR navega a `/juegos/[id]` del juego correspondiente.
-- [ ] `/juegos/[id]` muestra título, descripción larga, 4 etiquetas, franja de estadísticas y 10 filas de ranking con las 3 primeras en dorado, plata y bronce.
-- [ ] `/juegos/no-existe` devuelve la página 404 de Next.
-- [ ] JUGAR AHORA navega a `/juegos/[id]/jugar`; VOLVER AL VAULT navega a `/`.
-- [ ] En el reproductor, el puntaje aumenta solo; con PAUSA deja de aumentar y aparece "EN PAUSA"; REANUDAR lo reactiva.
-- [ ] FIN abre el modal "FIN DEL JUEGO" con la puntuación final; GUARDAR PUNTUACIÓN agrega una entrada a `localStorage.av_scores` y muestra "PUNTUACIÓN GUARDADA_".
-- [ ] JUGAR DE NUEVO reinicia puntaje en 0, vidas en 3 y nivel en 01; SALIR navega a `/juegos/[id]`.
-- [ ] En `/auth`, la pestaña CREAR CUENTA muestra el campo de correo; INICIAR SESIÓN lo oculta.
-- [ ] Enviar el formulario con usuario "px_kai" guarda `av_user = {"name":"PX_KAI"}`, redirige a `/` y el navbar muestra `PX_KAI ▾`.
-- [ ] Enviar el formulario vacío crea el usuario `PLAYER1`.
-- [ ] Clic en el botón con el nombre del usuario cierra la sesión y el navbar vuelve a mostrar "Iniciar Sesión".
-- [ ] Los botones GOOGLE y GITHUB no hacen nada ni producen errores en consola.
-- [ ] Recargar la página con sesión iniciada mantiene el nombre en el navbar sin errores de hidratación en consola.
-- [ ] `/salon` muestra 8 pestañas (una por juego), podio con 1.º, 2.º y 3.º, y tabla de 12 filas.
-- [ ] Cambiar la pestaña del salón actualiza podio y tabla.
-- [ ] En `/salon`, la fila "TU MEJOR MARCA EN {TÍTULO}" aparece solo con sesión iniciada.
-- [ ] El enlace activo del navbar es "Biblioteca" en `/`, `/juegos/[id]` y `/juegos/[id]/jugar`, y "Salón de la Fama" en `/salon`.
-- [ ] Con ancho menor a 840 px se oculta el menú de enlaces, aparece el botón `≡` y abre el panel lateral con los enlaces.
-- [ ] El contador "CRÉDITOS · 03" y el footer "© 2026 ARCADE VAULT · HECHO CON PIXELES Y NEÓN · v2.6.0" se muestran como en el template.
+- [x] `npm run lint` y `npm run build` terminan sin errores ni avisos de deprecación nuevos.
+- [x] `/` muestra el hero "ARCADE VAULT", el campo de búsqueda, los 5 chips (`TODOS`, `ARCADE`, `PUZZLE`, `SHOOTER`, `VERSUS`) y 8 tarjetas.
+- [x] Escribir "caí" en la búsqueda deja solo la tarjeta CAÍDA.
+- [x] Buscar un texto sin coincidencias muestra "NO HAY RESULTADOS".
+- [x] Clic en una tarjeta o en su botón JUGAR navega a `/juegos/[id]` del juego correspondiente.
+- [x] `/juegos/[id]` muestra título, descripción larga, 4 etiquetas, franja de estadísticas y 10 filas de ranking con las 3 primeras en dorado, plata y bronce.
+- [x] `/juegos/no-existe` devuelve la página 404 de Next.
+- [x] JUGAR AHORA navega a `/juegos/[id]/jugar`; VOLVER AL VAULT navega a `/`.
+- [x] En el reproductor, el puntaje aumenta solo; con PAUSA deja de aumentar y aparece "EN PAUSA"; REANUDAR lo reactiva.
+- [x] FIN abre el modal "FIN DEL JUEGO" con la puntuación final; GUARDAR PUNTUACIÓN agrega una entrada a `localStorage.av_scores` y muestra "PUNTUACIÓN GUARDADA_".
+- [x] JUGAR DE NUEVO reinicia puntaje en 0, vidas en 3 y nivel en 01; SALIR navega a `/juegos/[id]`.
+- [x] En `/auth`, la pestaña CREAR CUENTA muestra el campo de correo; INICIAR SESIÓN lo oculta.
+- [x] Enviar el formulario con usuario "px_kai" guarda `av_user = {"name":"PX_KAI"}`, redirige a `/` y el navbar muestra `PX_KAI ▾`.
+- [x] Enviar el formulario vacío crea el usuario `PLAYER1`.
+- [x] Clic en el botón con el nombre del usuario cierra la sesión y el navbar vuelve a mostrar "Iniciar Sesión".
+- [x] Los botones GOOGLE y GITHUB no hacen nada ni producen errores en consola.
+- [x] Recargar la página con sesión iniciada mantiene el nombre en el navbar sin errores de hidratación en consola.
+- [x] `/salon` muestra 8 pestañas (una por juego), podio con 1.º, 2.º y 3.º, y tabla de 12 filas.
+- [x] Cambiar la pestaña del salón actualiza podio y tabla.
+- [x] En `/salon`, la fila "TU MEJOR MARCA EN {TÍTULO}" aparece solo con sesión iniciada.
+- [x] El enlace activo del navbar es "Biblioteca" en `/`, `/juegos/[id]` y `/juegos/[id]/jugar`, y "Salón de la Fama" en `/salon`.
+- [x] Con ancho menor a 840 px se oculta el menú de enlaces, aparece el botón `≡` y abre el panel lateral con los enlaces.
+- [x] El contador "CRÉDITOS · 03" y el footer "© 2026 ARCADE VAULT · HECHO CON PIXELES Y NEÓN · v2.6.0" se muestran como en el template.
 
 ## Decisiones tomadas y descartadas
 
